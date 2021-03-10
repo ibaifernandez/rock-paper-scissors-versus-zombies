@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper or Scissors Against Zombies</title>
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <script src="js/script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+    </head>
+    <body>
+        <div><img class="zombie" src="../rps-game/img/zombie.png"></div>
+        <div><img class="zombie-2" src="../rps-game/img/zombie-2.png"></div>  
+        <main>
+            <header>
+                <h1>It's time to face the zombies!</h1>
+            </header>
+            <p>Zombies attack! And the only way to beat them is thru a deathly game of Rock, Paper and Scissors... best out of 5!</p>
+            <p>Are you ready?</p>
+            <h2>Choose your weapon!</h2>
+            <div class="weapons">
+                <button id="rock" class="selection">🪨</button> 
+                <button id="paper" class="selection">🗒</button> 
+                <button id="scissors" class="selection">✂️</button> 
+            </div>
+            <div id="result-caption"></div>
+            <div class="scoreboard">
+                <div class="user-score-div">
+                    <span id="username">User</span>
+                    <span class="user-score">0</span>
+                </div>
+                <div class="comp-score-div">
+                    <span>Zombies</span>
+                    <span class="comp-score">0</span>
+                </div>
+        </main>
+        <footer>
+            <small>Designed by <a href="https://github.com/ibaifernandez" target="_blank">Ibai Fernández</small>
+        </footer>
+        <audio id="draw-game" class="no-display" preload="none">
+            <source src="snd/audioDraw.mp3" type="audio/mp3">
+        </audio>
+        <audio id="zombie-wins" class="no-display" preload="none">
+            <source src="snd/zombie-wins.mp3" type="audio/mp3">
+        </audio>
+        <audio id="player-wins" class="no-display" preload="none">
+            <source src="snd/ZombieKill.mp3" type="audio/mp3">
+        </audio>
+        <audio id="player-victory" class="no-display" preload="none">
+            <source src="snd/cheering.mp3" type="audio/mp3">
+        </audio>
+        <audio id="player-defeat" class="no-display" preload="none">
+            <source src="snd/aww.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>
